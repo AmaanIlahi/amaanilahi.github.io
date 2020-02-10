@@ -1,0 +1,67 @@
+
+.wrapper{
+	width: 800px;
+	margin: 0 auto;
+}
+.wrapper h3{
+	text-align: left;
+}
+.skill-line{
+	height:25px;
+	min-width: 300px;
+	margin: 0 auto 10px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #fff;
+	padding:0 0 0 10px;
+	position: relative;
+}
+.skill-line:before{
+	content:'';
+	width:100%;
+	position: absolute;
+	left: 0;
+	height: 25px;
+	top:0;
+	z-index:-2;
+	background: #fbd214;
+}
+.skill-line:after{
+	content:'';
+	width:100%;
+	transition: 0.8s;
+	display: block;
+	height: 25px;
+	background: #333;
+	animation: animate 1 5s;
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	top:0;
+}
+.skill-line1:after{
+	max-width: 85%;
+}
+.skill-line2:after{
+	max-width: 75%;
+}
+.skill-line3:after{
+	max-width: 80%;
+}
+.skill-line4:after{
+	max-width: 90%;
+}
+.skill-line5:after{
+	max-width: 80%;
+}
+.skill-line6:after{
+	max-width: 70%;
+}
+@keyframes animate{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
